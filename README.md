@@ -22,13 +22,17 @@ cons
 Explain briefly how to deploy a Node/Express application including how to solve the following deployment problems:
 -
 Deploying Node.js app on digital ocean
+
 Ensure that you Node-process restarts after a (potential) exception that closed the application
 -
+
 Ensure that you Node-process restarts after a server (Ubuntu) restart
 -
+
 Ensure that you can run “many” node-applications on a single droplet on the same port (80)
 -
 This can be accomplished by implementing a reversy proxy i.e Nginx
+
 
 Explain the difference between “Debug outputs” and application logging. What’s wrong with console.log(..) statements in our backend-code.
 - 
@@ -37,7 +41,7 @@ Explain the difference between “Debug outputs” and application logging. What
 Explain, using relevant examples, concepts related to testing a REST-API using Node/JavaScript + relevant packages 
 -
 We can test our code with mocha, and use chai’s expect to make our tests more readable.
-const expect = require("chai").expect;
+`const expect = require("chai").expect;
 const calc = require("../calc.js");
 const fetch = require("node-fetch");
 const PORT = 3355;
@@ -82,16 +86,19 @@ describe("Calculator API", function () {
         });
     })  
 })
-
+`
 Explain, using relevant examples, the Express concept; middleware.
 -
 
 Compare the express strategy toward (server side) templating with the one you used with Java on second semester.
 -
+
 Demonstrate a simple Server Side Rendering example using a technology of your own choice (pug, EJS, ..).
 -
+
 Explain, using relevant examples, your strategy for implementing a REST-API with Node/Express and show how you can "test" all the four CRUD operations programmatically using, for example, the Request package.
 -
+
 Explain, using relevant examples, about testing JavaScript code, relevant packages (Mocha etc.) and how to test asynchronous code.
 -
 
@@ -100,25 +107,32 @@ Explain, preferably using an example, how you have deployed your node/Express ap
 
 NoSQL, MongoDB and MongooseExplain, generally, what is meant by a NoSQL database.
 -
+
 NoSQL is an approach to database design that can accomodate a wide variety of data models, including key-value, document, columnar and graph formats. NoSQL, which stand for "not only SQL," is an alternative to traditional relational databases in which data is placed in tables and data schema is carefully designed before the database is built. NoSQL databases are especially useful for working with large sets of distributed data.
 Explain Pros & Cons in using a NoSQL database like MongoDB as your data store, compared to a traditional Relational SQL Database like MySQL.
 -
+
 Explain reasons to add a layer like Mongoose, on top on of a schema-less database like MongoDB
 -
+
 Mongoose defines a schema for your data models so your documents follow a specific structure with pre-defined data types.
 Mongoose provides optional pre and post save operations for data models. This makes it easy to define hooks and custom functionality on successful reads/writes etc. You can also define custom methods that act on a particular instance (or document). While you can achieve similar functionality with the native MongoDB driver, Mongoose makes it easier to define and organize such methods within your schema definition.
 
 These two topics will be introduced in period-3
 -
+
 Explain about indexes in MongoDB, how to create them, and demonstrate how you have used them.
 -
+
 Explain, using your own code examples, how you have used some of MongoDB's "special" indexes like TTL and 2dsphere
 -
 
 Demonstrate, using a REST-API you have designed, how to perform all CRUD operations on a MongoDB
 -
+
 Explain the benefits of using Mongoose, and demonstrate, using your own code, an example involving all CRUD operations
 -
+
 Explain the “6 Rules of Thumb: Your Guide Through the Rainbow” as to how and when you would use normalization vs. denormalization.
 -
 rule 1 Favor embedding unless there is a compelling reason not to.
@@ -130,5 +144,6 @@ rule 6 As always with MongoDB, how you model your data depends – entirely – 
 
 Demonstrate, using your own code-samples, decisions you have made regarding → normalization vs denormalization 
 -
+
 Explain, using a relevant example, a full JavaScript backend including relevant test cases to test the REST-API (not on the production database)
 -
