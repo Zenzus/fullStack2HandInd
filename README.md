@@ -10,6 +10,7 @@ Why would you consider a Scripting Language as JavaScript as your Backend Platfo
 Explain Pros & Cons in using Node.js + Express to implement your Backend compared to a strategy using, for example, Java/JAX-RS/Tomcat
 -
 Pros
+
 •	better efficiency and overall developer productivity
 •	code sharing and reuse
 •	speed and performance
