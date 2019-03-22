@@ -48,7 +48,8 @@ Explain the difference between “Debug outputs” and application logging. What
 Explain, using relevant examples, concepts related to testing a REST-API using Node/JavaScript + relevant packages 
 -
 We can test our code with mocha, and use chai’s expect to make our tests more readable.
-`const expect = require("chai").expect;
+```
+const expect = require("chai").expect;
 const calc = require("../calc.js");
 const fetch = require("node-fetch");
 const PORT = 3355;
@@ -93,7 +94,7 @@ describe("Calculator API", function () {
         });
     })  
 })
-`
+```
 Explain, using relevant examples, the Express concept; middleware.
 -
 
