@@ -52,7 +52,7 @@ We can test our code with mocha, and use chai’s expect to make our tests more 
 const calc = require("../calc.js");
 const fetch = require("node-fetch");
 const PORT = 3355;
-const URL = `http://localhost:${PORT}/api/calc/`;
+const URL = http://localhost:${PORT}/api/calc/;
 let server;
 
 describe("Calculator API", function () {
