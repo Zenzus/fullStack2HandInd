@@ -115,8 +115,8 @@ Explain, preferably using an example, how you have deployed your node/Express ap
 
 NoSQL, MongoDB and MongooseExplain, generally, what is meant by a NoSQL database.
 -
-
 NoSQL is an approach to database design that can accomodate a wide variety of data models, including key-value, document, columnar and graph formats. NoSQL, which stand for "not only SQL," is an alternative to traditional relational databases in which data is placed in tables and data schema is carefully designed before the database is built. NoSQL databases are especially useful for working with large sets of distributed data.
+
 Explain Pros & Cons in using a NoSQL database like MongoDB as your data store, compared to a traditional Relational SQL Database like MySQL.
 -
 
