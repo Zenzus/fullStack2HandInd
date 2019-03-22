@@ -3,7 +3,9 @@
 Why would you consider a Scripting Language as JavaScript as your Backend Platform?
 - 
 •	using the same language on both the front end and the back end.
+
 •	JavaScript is the most popular programming language.
+
 •	The fact that the whole Node.js technology stack is open-source
 
 
@@ -12,9 +14,13 @@ Explain Pros & Cons in using Node.js + Express to implement your Backend compare
 Pros
 
 •	better efficiency and overall developer productivity
+
 •	code sharing and reuse
+
 •	speed and performance
+
 •	easy knowledge sharing within a team
+
 •	huge number of free tools
 
 cons
