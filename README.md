@@ -14,7 +14,7 @@ Developing with a scripting language like JavaScript is fairly simple and easy t
 Javascript is also currently the only scripting language that can run natively in your internet browser, which makes me believe it is the only good language for front-end development.
 
 The major advantage with node.js as the backend is that javascript doesn't block input and output communication with the frontend, which means javascript can run in the background at the same time as the user is using the frontend, and it can read input and outputs simultaneously.
-Another benefit to using javascript as the backend is single-threaded event loops, that is responsible for abstracting input and output from external requests. Speaking plainly, this means that Node initiates the event loop at the start, processes the input, and begins the order of operations. [(source)](https://thinkmobiles.com/blog/why-use-nodejs/)
+Another benefit to using javascript as the backend is single-threaded event loops, that is responsible for abstracting input and output from external requests. Speaking plainly, this means that Node initiates the event loop at the start, processes the input, and begins the order of operations.
 
 ### Explain Pros & Cons in using Node.js + Express to implement your Backend compared to a strategy using, for example, Java/JAX-RS/Tomcat
 #### pros
@@ -41,7 +41,7 @@ Since the release of Node.js v10.5.0 there’s a new worker_threads (clusters) m
 There are two solutions to make sure out Node-process restarts after a potential exception/crash.
 The first one is to use a Process Manager. A Process Manager manages the 'starting' of our application, which means we no longer have to start the application manually. We can configure the Process Manager to automatically restart the application if a crash occurs.
 
-Here is a list of popular Process Managers for Express [(source)](https://expressjs.com/en/advanced/pm.html):
+Here is a list of popular Process Managers for Express 
 1. Forever: A simple command-line interface tool to ensure that a script runs continuously (forever). Forever’s simple interface makes it ideal for running smaller deployments of Node.js apps and scripts.
 2. PM2: A production process manager for Node.js applications that has a built-in load balancer. PM2 enables you to keep applications alive forever, reloads them without downtime, helps you to manage application logging, monitoring, and clustering.
 3. StrongLoop Process Manager (Strong-PM): A production process manager for Node.js applications with built-in load balancing, monitoring, and multi-host deployment. Includes a CLI to build, package, and deploy Node.js applications to a local or remote system.
@@ -96,7 +96,7 @@ var b = require('debug')('name:b');
 ### Explain, using relevant examples, concepts related to testing a REST-API using Node/JavaScript + relevant packages
 We can test our REST endpoints with [mocca](https://www.npmjs.com/package/mocca) and [chai](https://www.npmjs.com/package/chai).
 We use `mocca` to run our tests and `chai` to make our tests more readable
-Here is an example where I've used `mocca` and `chai` to test my [Calculator API](https://github.com/Srax/FullStackJavascript-Flow2-Handin/blob/master/Testing/TestExercisesMochaAndChai_Calculator/test/testCalculator.js):
+Here is an example where I've used `mocca` and `chai` to test my 
 ```Javascript
 const expect = require("chai").expect;
 const calculate = require("../calculator");
@@ -162,9 +162,9 @@ Middleware functions can perform the following tasks:
 * Make changes to the request and the response objects.
 * End the request-response cycle.
 * Call the next middleware function in the stack.
-[source] (https://github.com/Srax/FullStackJavascript-Flow2-Handin/blob/master/Express%20Exercises/Express_Exercise_Middleware/app.js)
 
-I have used middleware functions in my [calculator](https://github.com/Srax/FullStackJavascript-Flow2-Handin/blob/master/Testing/TestExercisesMochaAndChai_Calculator/calculator.js#L15).
+
+I have used middleware functions in my 
 ```Javascript
 //Function 1
 app.use("/api/calculator/:n1/:operation/:n2", function(req, res, next) {
@@ -215,12 +215,12 @@ You login with a username, and can then request a random joke, get a list of all
 
 ### Explain, using relevant examples, your strategy for implementing a REST-API with Node/Express and show how you can "test" all the four CRUD operations programmatically using, for example, the Request package.
 This [example from Vegibit](https://vegibit.com/mongoose-crud-tutorial/) explains how implement CRUD in our Node/Express project.   
-I have tested CRUD operations in my [MiniProjectP1](https://github.com/Srax/FullStackJavascript-Flow2-Handin/tree/master/miniProject/test).
+I have tested CRUD operations in my https://github.com/Zenzus/fullStack2HandInd/tree/master/MiniProject2_0/test
 
 
 ### Explain, using relevant examples, about testing JavaScript code, relevant packages (Mocha etc.) and how to test asynchronous code.
-I have tested asynchronous code in my week 2 mocca and chai exercise: https://github.com/Srax/FullStackJavascript-Flow2-Handin/tree/master/Testing/TestExercisesMochaAndChai_Calculator  
-and in my MiniProjectP1: https://github.com/Srax/FullStackJavascript-Flow2-Handin/tree/master/miniProject   
+I have tested asynchronous code in my week 2 mocca and chai exercise: https://github.com/Zenzus/fullStack2HandInd/tree/master/testing_mocha_chai
+and in my MiniProjectP1: https://github.com/Zenzus/fullStack2HandInd/tree/master/MiniProject2_0 
 
 ### Explain, using relevant examples, different ways to mock out databases, HTTP-request etc.
 We can make HTTP-request using the [nock](https://www.npmjs.com/package/nock) package.
